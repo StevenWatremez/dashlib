@@ -52,6 +52,9 @@ export class LibraryService {
           library.id = lib['id']
           library.projectVersion = currentVersion
           library.latestVersion = lib['version']
+          library.summary = lib['summary']
+          library.link = lib['link']
+          library.source = lib['source']['http']
           return library
         }),
         tap(_ => this.log(`fetched library name=${name}`)),

@@ -21,4 +21,8 @@ export class LibrariesComponent implements OnInit {
     this.libraryService.getLibraries()
         .subscribe(libraries => this.libraries = libraries);
   }
+
+  // get isOld(library: Library): boolean { 
+  //   return library.latestVersion > library.projectVersion;
+  // }
 }
