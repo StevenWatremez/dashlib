@@ -15,12 +15,14 @@ import { MatButtonModule } from '@angular/material/button';
 
 // Animations
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LibraryComponent } from './library/library.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LibrariesComponent,
-    MessagesComponent
+    MessagesComponent,
+    LibraryComponent
   ],
   imports: [
     BrowserModule,

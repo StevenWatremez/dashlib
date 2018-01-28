@@ -1,0 +1,11 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>{{ library.id | uppercase }}</mat-card-title>
+    <mat-card-subtitle>project version {{library.projectVersion}}</mat-card-subtitle>
+    <mat-card-subtitle>latest version {{library.latestVersion}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content><p>{{ library.summary }}</p></mat-card-content>
+  <mat-card-actions>
+    <a mat-button color="primary" href='{{ library.link }}' target="_blank">Link</a>
+  </mat-card-actions>
+</mat-card>
