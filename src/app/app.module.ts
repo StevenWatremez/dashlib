@@ -8,6 +8,14 @@ import { LibraryService } from './library.service';
 import { MessagesComponent } from './messages/messages.component';
 import { MessageService } from './message.service';
 
+// UI : Angular Material
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+
+// Animations
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +24,11 @@ import { MessageService } from './message.service';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatGridListModule,
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [LibraryService, MessageService],
   bootstrap: [AppComponent]

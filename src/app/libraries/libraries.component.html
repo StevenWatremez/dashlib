@@ -1,8 +1,24 @@
 <h1>Cocoapod</h1>
-<div *ngFor="let library of libraries">
-  <h2>{{ library.id | uppercase }} Details</h2>
-  <div><span>id: </span>{{library.id}}</div>
-  <div><span>projectVersion: </span>{{library.projectVersion}}</div>
-  <!-- <div><span>latestMinorVersion: </span>{{library.latestMinorVersion}}</div> -->
-  <div><span>latestVersion: </span>{{library.latestVersion}}</div>
-</div>
+
+<mat-grid-list cols="5">
+  <mat-grid-tile *ngFor="let library of libraries">
+    <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>{{ library.id | uppercase }}</mat-card-title>
+          <mat-card-subtitle>project version {{library.projectVersion}}</mat-card-subtitle>
+          <mat-card-subtitle>latest version {{library.latestVersion}}</mat-card-subtitle>
+        </mat-card-header>
+        
+        <!-- <mat-card-content>
+          <p>
+            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+            bred for hunting.
+          </p>
+        </mat-card-content> -->
+        <mat-card-actions>
+          <button mat-button color="primary">Source</button>
+        </mat-card-actions>
+      </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
