@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Library } from '../Library';
+import { LibraryService } from '../library.service';
 
 @Component({
   selector: 'app-libraries',
@@ -8,16 +9,16 @@ import { Library } from '../Library';
 })
 export class LibrariesComponent implements OnInit {
 
-  library: Library = {
-    id: 1,
-    name: 'Rx-Swift',
-    projectVersion: '3.9.9',
-    latestVersion: '4.8.7'
-  };
+  libraries: Library[];
 
-  constructor() { }
+  constructor(private libraryService: LibraryService) { }
 
   ngOnInit() {
+    this.getLibraries();
   }
 
+  getLibraries(): void {
+    this.libraryService.getLibraries()
+        .subscribe(libraries => this.libraries = libraries);
+  }
 }

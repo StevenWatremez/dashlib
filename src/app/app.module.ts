@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { LibrariesComponent } from './libraries/libraries.component';
+import { LibraryService } from './library.service';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,7 @@ import { LibrariesComponent } from './libraries/libraries.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [LibraryService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
