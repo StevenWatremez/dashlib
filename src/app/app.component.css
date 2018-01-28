@@ -1,6 +1,17 @@
 
 h1 {
-  color: #212121;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 4em;
+  position: relative;
+  top: 60px;
+}
+
+.page-title-container {
+  text-align: center;
+  height: 200px;
+  color: #37474F;
+  margin-top: -45px;
+  margin-right: -5px;
+  margin-left: -5px;
+  background-color: #B3E5FC;
 }

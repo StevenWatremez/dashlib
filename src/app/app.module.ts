@@ -13,6 +13,8 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 
+import { FlexLayoutModule } from "@angular/flex-layout";
+
 // Animations
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LibraryComponent } from './library/library.component';
@@ -30,7 +32,8 @@ import { LibraryComponent } from './library/library.component';
     BrowserAnimationsModule,
     MatGridListModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    FlexLayoutModule
   ],
   providers: [LibraryService, MessageService],
   bootstrap: [AppComponent]
