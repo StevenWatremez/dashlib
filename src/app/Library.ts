@@ -1,6 +1,5 @@
 export class Library {
-  id: number;
-  name: string;
+  id: string;
   projectVersion: string;
   latestMinorVersion: string;
   latestVersion: string;

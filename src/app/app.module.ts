@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { LibrariesComponent } from './libraries/libraries.component';
@@ -14,7 +15,8 @@ import { MessageService } from './message.service';
     MessagesComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [LibraryService, MessageService],
   bootstrap: [AppComponent]
