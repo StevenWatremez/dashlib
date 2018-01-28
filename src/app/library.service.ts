@@ -12,7 +12,7 @@ import { MessageService } from './message.service';
 @Injectable()
 export class LibraryService {
 
-  private cocoapodsLibrariesUrl = 'http://search.cocoapods.org/api/v1/pods.picky.hash.json?query';  // URL to web api
+  private cocoapodsLibrariesUrl = 'https://search.cocoapods.org/api/v1/pods.picky.hash.json?query';  // URL to web api
 
   constructor(
     private http: HttpClient,
