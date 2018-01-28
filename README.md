@@ -7,7 +7,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ![alt dashlib screen shot](./img/home.png)
 
-This project is under contruction. For now libraries is fetched from cocoapods. There is an hardcode array to provide libraries to fetch inside [mock-libraries.ts](./src/app/mock-libraries.ts).
+This project is under contruction. For now libraries are fetched from cocoapods. There is an hardcode array to provide libraries to fetch inside [mock-libraries.ts](./src/app/mock-libraries.ts).
 
 ## TODO 
 - [ ] manage other central lib like maven-central
