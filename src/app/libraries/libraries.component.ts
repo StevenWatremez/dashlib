@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Library } from '../Library';
+import { Library } from '../library';
 import { LibraryService } from '../library.service';
 
 @Component({
